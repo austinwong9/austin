@@ -1,0 +1,142 @@
+
+body{
+    background-color: #777;
+}
+*{
+    box-sizing: border-box;
+}
+.circle-box{
+    width: 360px;
+    height: 360px;
+    border: rgb(39, 95, 159) 3px solid;
+    background-color: rgb(39, 131, 131);
+    transform: translate(70px, 70px);
+    border-radius: 40px;
+    padding:0;
+    box-shadow: 7px 7px 2px #014;
+}
+.outer-circle{
+    width: 320px;
+    height: 320px;
+    border: 2px solid #099;
+    background-color: #0ee;
+    border-radius: 320px;
+    left: 20px;
+    top: 20px;
+    position: absolute;
+}
+.circle{
+    transform: translate(8px, 8px);
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    border: 5px solid #099;
+    background-color: #fff;
+    padding: 0;
+}
+.hour{
+    position: absolute;
+    font-size: 200%;
+    font-weight: 800;
+    margin:0;
+    padding: 0;
+}
+.center{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 146px;
+    top: 146px;
+    border-radius: 20px;
+    background-color: black;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.4),-3px -3px 10px rgba(0,0,0,0.4);
+}
+.second-hand-box{
+    position: absolute;
+    height: 280px;
+    width: 280px;
+    left: 5px;
+    top: 5px;
+    }
+.minute-hand-box{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    left: 44px;
+    top: 44px;
+    }
+.hour-hand-box{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    left: 72px;
+    top: 72px;
+    }
+.hour-hand{
+    position: absolute;
+    background-color: #041;
+    width: 9px;
+    height: 70px;
+    left: 69px;
+    top: 0px;
+    z-index: 2;
+    border-radius: 100px 100px 0 0;
+    box-shadow: 5px 5px 6px rgba(0,0,0,0.4);
+}
+.minute-hand{
+    position: absolute;
+    background-color: #505;
+    width: 5px;
+    height: 100px;
+    left: 97px;
+    z-index: 3;
+    box-shadow: 6px 6px 4px rgba(0,0,0,0.4);
+    
+}
+
+.second-hand{
+    position: absolute;
+    background-color: black;
+    width: 3px;
+    height: 130px;
+    left: 139px;
+    top: 3px;
+    z-index: 4;
+    box-shadow: 7px 7px 3px rgba(0,0,0,0.4);
+   
+}
+/* #sec-shadow{
+    position: absolute;
+    background-color: rgba(0,0,0,0.3);
+    width: 2px;
+    height: 130px;
+    left: 149px;
+    top: 10px;
+    z-index: 0;
+   
+} */
+.date-box{
+    width: 60px;
+    height: 19px;
+    background-color: #222;
+    color: white;
+    border: gray 2px inset;
+    position: absolute;
+    top: 137px;
+    left: 192px;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+}
+.date, .month, .date-box p{
+    color: white;
+    font-size: 13px;
+    display: inline-block;
+    margin: 0;
+    padding: 1px 1px;
+    display: inline-block;
+}
+
+
